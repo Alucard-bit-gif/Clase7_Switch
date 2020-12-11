@@ -21,7 +21,7 @@ cantidad= Number(document.getElementById('Compra').value);
 //Invocar funcion para cantidad.
  
 switch(true){
-  case cantidad > 50:
+  case cantidad >= 50:
     document.write('Debes ingresar codigo de compra para obtener tu descuento');
     break;
   
