@@ -1,0 +1,139 @@
+* { margin: 0; 
+    padding: 0; 
+  border: 0;
+  }
+  
+  header
+  {
+    background-color: #000000;
+    color: rgb(240,240,240);
+    height: 70px;
+    text-align: left;  
+  }
+  
+  p{
+  padding: 20px 0px 0px 30px;
+  font-size: 20px;
+  font-family: Arial;
+  }
+
+  h1{
+    padding: 20px 0px 0px 30px;
+    font-family: Arial;
+    }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.7),
+        rgba(131, 131, 173, 0.7)
+      ),
+   url("https://product.hubspot.com/hubfs/Bus.png")  ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+  }
+
+#mayorDinero{
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+#busOne, #busTwo{
+    display: block;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#Delta{
+    float:left;
+    border-style: solid;
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: 0px auto;
+    border-color: 2 px solid rgb(0, 0, 0);
+    padding-bottom: 50px;
+    font-size: 20px;
+    width: 21%;
+    margin-left: 110px;
+    background-color: rgba(111, 0, 255, 0.5);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Gama{
+    
+    float:right;
+    border-style:solid;
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: 0px auto;
+    border-color: 2 px solid rgb(0, 0, 0);
+    padding-bottom: 50px;
+    font-size: 20px;
+    width: 21%;
+    margin-right: 110px;
+    background-color: rgba(111, 0, 255, 0.5);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#Boton{
+    background-color: rgba(65, 4, 145, 0.699);
+    display: block;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 500px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+#ingresoBus
+
+{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+}
+
+.texto
+{
+    margin: 10px 10px 10px 10px;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 8px;
+  }
+
+
+.campo
+{
+  margin: 50px 50px 50px 40px;
+  width: 650px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 8px;
+}
