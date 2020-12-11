@@ -10,7 +10,7 @@ var codPromocion;
 
 //Ingresar cantidad a comprar.
 
-cantidad= parseInt(prompt('Ingrese cantidad'));
+cantidad= Number(document.getElementById('Compra').value);
 
 //Ingresar codigo de promoción.
 
