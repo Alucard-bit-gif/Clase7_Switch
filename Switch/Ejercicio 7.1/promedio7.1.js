@@ -10,7 +10,8 @@ var codPromocion;
 
 //Ingresar cantidad a comprar.
 
-cantidad= Number(document.getElementById('Compra').value);
+cantidad= prompt('Ingresa cantidad');
+//Number(document.getElementById('Compra').value);
 
 //Ingresar codigo de promoción.
 
@@ -22,7 +23,7 @@ cantidad= Number(document.getElementById('Compra').value);
  
 switch(true){
   case cantidad >= 50:
-    document.write('Debes ingresar codigo de compra para obtener tu descuento');
+  document.write('Debes ingresar codigo de compra para obtener tu descuento');
     break;
   
   default:
