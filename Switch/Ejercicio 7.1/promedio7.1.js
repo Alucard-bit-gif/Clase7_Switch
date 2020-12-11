@@ -1,5 +1,7 @@
 //Inicio
 
+document.getElementById('OrdenC').style.display="none"; 
+
 //Declarar variables
 
 var PVP= 50;

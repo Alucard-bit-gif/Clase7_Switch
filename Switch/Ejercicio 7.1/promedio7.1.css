@@ -17,9 +17,22 @@
   font-family: Arial;
   }
 
-  h1{
-    padding: 20px 0px 0px 30px;
+  #tituloUno
+  {
+    padding-right: 40px;
+  }
+
+  #tituloDos
+  {
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+  
+  h1, h2{
+    padding: 50px 0px 0px 30px;
     font-family: Arial;
+    text-align: center;
+    
     }
 
   body::before {
@@ -36,26 +49,14 @@
         rgba(230, 148, 148, 0.041),
         rgba(240, 133, 186, 0.075)
       ),
-   url("https://img.freepik.com/vector-gratis/dibujado-mano-linda-ilustracion-invierno-vacaciones-varios-git-box-estilo-dibujos-animados_263522-175.jpg?size=626&ext=jpg&ga=GA1.2.947570117.1601933563")  ; 
+   url("https://wallup.net/wp-content/uploads/2018/09/30/66749-computers-html-computer-code-748x468.jpg")  ; 
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     height: 100vh;
   }
 
-#mayorDinero{
-    display: block;
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 70px;
-}
 
-#busOne, #busTwo{
-    display: block;
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
 
 #Delta{
     
@@ -67,77 +68,85 @@
     border-color: 2 px solid rgb(0, 0, 0);
     padding-bottom: 50px;
     font-size: 30px;
-    width: 50%;
-    margin-left: 110px;
-    background-color: #ff7989;
+    width: 45%;
+    background-color: #220786af;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 150px 300px 0px 300px; 
+    margin-top: 150px; 
     color: whitesmoke;
     font-weight: bolder;
 
 }
 
-#Gama{
-    
-    float:right;
-    border-style:solid;
-    display: block;
-    text-align: center;
-    align-content: center;
-    margin: 0px auto;
-    border-color: 2 px solid rgb(0, 0, 0);
-    padding-bottom: 50px;
-    font-size: 20px;
-    width: 21%;
-    margin-right: 110px;
-    background-color: rgba(111, 0, 255, 0.5);
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+
+
+#cantidad
+{
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+#Compra
+{
+  margin-top: 35px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+#descuento
+{
+  border-style: solid;
+  display: block;
+  text-align: center;
+  align-content: center;
+  margin: 0px auto;
+  border-color: 2 px solid rgb(0, 0, 0);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:30px;
+  font-size: 30px;
+  width: 45%;
+  background-color: #220786af;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px; 
+  color: whitesmoke;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  
 }
 
 
 #Boton{
-    background-color: rgba(65, 4, 145, 0.699);
+    background-color: #220786e1;
     display: block;
     color: white;
     text-align: center;
     align-content: center;
-    margin: 0 auto;
-    margin-top: 500px;
-    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 200px;
+    font-size: 25px;
     padding: 10px;
     border-radius: 20px;
     width: 400px;
+    font-weight: bolder;
 }
 
-#ingresoBus
-
+#Codigo
 {
-    padding-top: 50px;
-    text-align: center;
-    padding-bottom: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 35px;
-}
-
-.texto
-{
-    margin: 10px 10px 10px 10px;
-    width: 150px;
-    height: 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    padding-left: 8px;
-  }
-
-
-.campo
-{
-  margin: 50px 50px 50px 40px;
-  width: 650px;
+  margin-top: 35px;
+  margin-bottom: 300px;
+  width: 400px;
   height: 40px;
   border-radius: 5px;
-  font-size: 18px;
-  padding-left: 8px;
+  font-size: 20px;
+  text-align: center;
 }
