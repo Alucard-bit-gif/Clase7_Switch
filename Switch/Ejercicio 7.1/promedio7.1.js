@@ -1,6 +1,6 @@
 //Inicio
 
-document.getElementById('OrdenC').style.display="none"; 
+document.getElementById('descuento').style.display="none"; 
 
 //Declarar variables
 
@@ -9,6 +9,8 @@ var cantidad = 0;
 var descuento = 0;
 var precioFinal;
 var codPromocion;
+
+
 
 //Ingresar cantidad a comprar.
 
