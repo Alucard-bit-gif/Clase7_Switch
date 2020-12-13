@@ -1,5 +1,6 @@
 //Inicio
 document.getElementById('descuento').style.display = "none";
+document.getElementById('sindescuento').style.display = "none";
 
 //Declarar variables
 
@@ -12,47 +13,47 @@ var codPromocion;
 
 function Comprar() {
 
-  document.getElementById('cantidad').style.display = "none" /*Ocultar contenedor de datos de venta */
-  document.getElementById('descuento').style.display = "block" /*Mostrar contenedor de orden de compra */
+  document.getElementById('cantidad').style.display = "none"; 
 
   //Ingresar cantidad a comprar.
 
   cantidad = Number(document.getElementById('Compra').value);
 
-  switch (true) {
-    case cantidad >= 50:
-      break;
+  //Invocar funcion.
 
-    default:
-      precioFinal = PVP * cantidad;
-      document.getElementById('cantidad').style.display = "none";
-      document.getElementById('titulo2').style.display = "block";
-      document.write("Precio= " + precioFinal + " €");      
-      break;
-  }
+  precioFinal = pagoCompra();
 
 }
 
+function pagoCompra(){
 
+switch (true) {
+  case cantidad >= 50:
+    document.getElementById('descuento').style.display = "block";   
+    break;
+
+  default:
+    precioFinal = PVP * cantidad;
+    document.getElementById('sindescuento').style.display = "block";
+    document.querySelector('#sindescuento').innerHTML= "Precio= " + precioFinal + " €";      
+    return precioFinal;
+}
+
+}
 
 function Calcular() {
 
 //Ingresar codigo de promoción.
 
+codPromocion = document.getElementById('codigo').value;
 
+//Procedimiento.
 
-  //codPromocion = document.getElementById('Codigo').value;
+//Invocar funcion para cantidad.
 
-  //Procedimiento.
-
-  //Invocar funcion para cantidad.
-
-  
+precioFinal = pagoCompra()  
 
 }
-//pasamos a mayúsculas para evitar diferencias al comparar por haber usado minúsculas:
-
-codPromocion = codPromocion.toUpperCase();
 
 switch (codPromocion) {
 
