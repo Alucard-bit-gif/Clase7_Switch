@@ -19,16 +19,23 @@
                 <label for="">Ingrese cantidad a comprar </label><br>
                 <input type="text" id="Compra" placeholder="numero de articulos">
             </div>
+            <button id="Boton" onclick="Comprar()">Registrar Compra</button>
         </div>
-        <button id="Boton" onclick="comprar()">Registrar Compra</button>
     </section>
 
     <section>
         <div id="descuento">
             <div id="tituloDos">
                 <label for="">Ingrese código de compra</label><br>
-                <input type="text" id="Codigo"> <br>
+                <select name="tipo" id="codigo" size="1"><br>
+                    <option value="plusoro">PLUSORO</option>
+                    <option value="platino33">PLATINO 33</option>
+                    <option value="100max">100 MAX</option>
+                    <option value="supersilver">SUPERSILVER</option>
+                    <option value="totalbronce">TOTALBRONCE</option>
+                </select>
             </div>
+            <button id="Boton2" onclick="Calcular()">Calcular Valor</button>
         </div>
     </section>
 
