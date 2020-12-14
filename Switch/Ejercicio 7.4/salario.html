@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="salario.css">
+    <title>Ejercicio7.4</title>
+</head>
+
+<body>
+    <section id="Delta">
+        <div id="tituloUno">
+            <h1>Wayne Power Enterprise</h1>
+            <h2>Pago Nomina</h2>
+        </div>
+    </section>
+
+    <section>
+        <div id="datos">
+            <div id="tituloDos">
+                <label for="">Ingrese nombre del trabajador</label><br>
+                <input type="text" id="nombre" placeholder="nombre">
+            </div>
+
+            <div id="tituloDos">
+                <label for="">Ingrese número de horas trabajadas</label><br>
+                <input type="number" id="horas" min = '1' max = '' placeholder="horas">
+            </div>
+            <div id="tituloDos">
+                <label for="">Valor hora</label><br>
+                <input type="number" id="valor" min = '1000' max = "10000" placeholder="precio/hora">
+            </div>
+            <button id="Boton2" onclick="Calcular()">Calcular</button>
+        </div>
+    </section>
+
+     <section>
+        <div id="tituloDos">
+            <div id = "resultado">
+                <h2>Resultado</h2><br>
+                <h4 id = 'Inicial'></h4>
+            </div>
+        </div> 
+     </section>   
+
+    <script src="salario.js">
+
+    </script>
+
+</body>
+
+</html>
