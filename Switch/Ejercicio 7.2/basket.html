@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="promedio7.1.css">
+    <title>Ejercicio7.1</title>
+</head>
+
+<body>
+    <section id="Delta">
+        <div id="tituloUno">
+            <h1>Cacharrería </h1>
+            <h2>El Chinito</h2>
+            <h3>Todo a $ 5.000 COP</h3>
+        </div>
+    </section>
+
+    <section>
+        <div id="descuento">
+            <div id="tituloDos">
+                <label for="">Ingrese código de compra</label><br>
+                <select name="tipo" id="codigo" size="1" ><br>
+                    <option value="" placeholder="ingrese su codigo"></option>
+                    <option value="0666">0666</option>
+                    <option value="1939">1939</option>
+                </select>
+            </div>
+            <div id="tituloDos">
+                <label for="">Ingrese cantidad de compra</label><br>
+                <input type="text" id="Compra" placeholder="numero de articulos">
+            </div>
+            <button id="Boton2" onclick="Calcular()">Calcular Valor</button>
+        </div>
+    </section>
+
+     <section>
+        <div id="tituloDos">
+            <div id = "resultado">
+                <h2>Valor inicial</h2><br>
+                <h4 id = 'Inicial'></h4>
+                <h2>Descuento</h2><br>
+                <h4 id = 'Descuento'></h4>
+                <h2>Total a pagar</h2><br>
+                <h4 id = 'Total'></h4>
+            </div>
+        </div> 
+     </section>   
+
+    <script src="promedio7.1.js">
+
+    </script>
+
+</body>
+
+</html>

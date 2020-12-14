@@ -1,0 +1,169 @@
+* { margin: 0; 
+    padding: 0; 
+  border: 0;
+  }
+  
+  header
+  {
+    background-color: #000000;
+    color: rgb(240,240,240);
+    height: 70px;
+    text-align: left;  
+  }
+  
+  p{
+  padding: 20px 0px 0px 30px;
+  font-size: 20px;
+  font-family: Arial;
+  }
+
+  #tituloUno
+  {
+    padding-right: 40px;
+  }
+
+  #tituloDos
+  {
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+  
+  h1, h2, h3, h4{
+    padding: 50px 0px 0px 30px;
+    font-family: Arial;
+    text-align: center;
+    
+    }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(230, 148, 148, 0.041),
+        rgba(240, 133, 186, 0.075)
+      ),
+   url("https://wallup.net/wp-content/uploads/2018/09/30/66749-computers-html-computer-code-748x468.jpg")  ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+  }
+
+
+
+#Delta{
+    
+    border-style: solid;
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: 0px auto;
+    border-color: 2 px solid rgb(0, 0, 0);
+    padding-bottom: 50px;
+    font-size: 30px;
+    width: 45%;
+    background-color: #220786af;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px; 
+    color: whitesmoke;
+    font-weight: bolder;
+
+}
+
+
+
+#cantidad
+{
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+#Compra
+{
+  margin-top: 35px;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+#descuento
+{
+  border-style: solid;
+  display: block;
+  text-align: center;
+  align-content: center;
+  margin: 0px auto;
+  border-color: 2 px solid rgb(0, 0, 0);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:30px;
+  font-size: 30px;
+  width: 45%;
+  background-color: #220786af;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px; 
+  color: whitesmoke;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  
+}
+
+#codigo
+{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#Boton2{
+  background-color: #220786e1;
+  display: block;
+  color: white;
+  text-align: center;
+  align-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 80px;
+  margin-right: 200px;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 400px;
+  font-weight: bolder;
+}
+
+#resultado{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #220786e1;  
+  padding-top: 0px;
+  padding-bottom: 50px;
+  padding-right: 35px;
+  display: block;
+  margin-left: 357px;
+  color: aliceblue;
+}
