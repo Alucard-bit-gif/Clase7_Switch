@@ -13,13 +13,7 @@
         <div id="tituloUno">
             <h1>Cacharrería </h1>
             <h2>El Chinito</h2>
-        </div>
-        <div id="cantidad">
-            <div>
-                <label for="">Ingrese cantidad a comprar </label><br>
-                <input type="text" id="Compra" placeholder="numero de articulos">
-            </div>
-            <button id="Boton" onclick="Comprar()">Registrar Compra</button>
+            <h3>Todo a $ 5.000 COP</h3>
         </div>
     </section>
 
@@ -28,22 +22,27 @@
             <div id="tituloDos">
                 <label for="">Ingrese código de compra</label><br>
                 <select name="tipo" id="codigo" size="1"><br>
-                    <option value="plusoro">PLUSORO</option>
-                    <option value="platino33">PLATINO 33</option>
-                    <option value="100max">100 MAX</option>
-                    <option value="supersilver">SUPERSILVER</option>
-                    <option value="totalbronce">TOTALBRONCE</option>
+                    <option value="0666">0666</option>
+                    <option value="1939">1939</option>
                 </select>
+            </div>
+            <div id="tituloDos">
+                <label for="">Ingrese cantidad de compra</label><br>
+                <input type="text" id="Compra" placeholder="numero de articulos">
             </div>
             <button id="Boton2" onclick="Calcular()">Calcular Valor</button>
         </div>
     </section>
 
-    <section>
-        <div>
-         <h1 id="sindescuento"></h1>
-        </div>
-    </section>
+     <section>
+        <div id="tituloDos">
+            <div id = "resultado">
+                <h3 id = 'Inicial'></h3><br>
+                <h3 id = 'Descuento'></h3><br>
+                <h3 id = 'Total'></h3>
+            </div>
+        </div> 
+     </section>   
 
     <script src="promedio7.1.js">
 

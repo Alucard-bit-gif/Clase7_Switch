@@ -28,7 +28,7 @@
     padding-top: 40px;
   }
   
-  h1, h2{
+  h1, h2, h3{
     padding: 50px 0px 0px 30px;
     font-family: Arial;
     text-align: center;
@@ -168,7 +168,7 @@
   font-weight: bolder;
 }
 
-#sindescuento{
+#resultado{
   margin-top: 35px;
   margin-bottom: 30px;
   width: 400px;
