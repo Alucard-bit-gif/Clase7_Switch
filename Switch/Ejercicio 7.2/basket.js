@@ -4,99 +4,109 @@ document.getElementById('resultado').style.display="none" ;
 
 //Declarar variables
 
-const precio = 5000;
-const descuento = 0.10;
-var codigoPromo;
-var cantidad;
-var precioInicial;
-var precioDesc;
-var precioFinal;
+let namePlayer;
+let generoPlayer;
+let oldPlayer;
+let estaturaPlayer;
+let heavyPlayer;
+let resultadoFinal;
 
 function Calcular()
 {
 
-  document.getElementById('descuento').style.display="none" ;
+  document.getElementById('datos').style.display="none" ;
   document.getElementById('resultado').style.display="block" ;
+
   //Leer variables.
 
   //Ingresar codigo.
-  codigoPromo = document.getElementById('codigo').value;
+  namePlayer = document.getElementById('nombre').value;
 
   //Ingresar cantidad de articulos a comprar
 
-  cantidad =  Number(document.getElementById('Compra').value);
+  generoPlayer = document.getElementById('codigo').value;
+
+  //Ingresar edad.
+  
+  oldPlayer =  Number(document.getElementById('edad').value);
+
+  //Ingresar estatura.
+
+  estaturaPlayer = Number(document.getElementById('edad').value);
+
+  //Ingresar peso.
+
+  heavyPlayer =   Number(document.getElementById('peso').value);
 
   //Invocar funcion.
 
-  precioFinal = valorCompra();
+  resultadoFinal = valorApto();
   
    
   //Imprimir funcion.
 
-          document.querySelector('#Inicial').innerHTML= " $ " + precioInicial + " COP ";    
-          document.querySelector('#Descuento').innerHTML= " $ " + precioDesc + " COP ";    
-          document.querySelector('#Total').innerHTML =  " $ " + precioFinal + " COP ";
-
+         
     
 
 }
 
-function valorCompra()
+function valorApto()
 {
-  switch (codigoPromo){
+  switch (generoPlayer){
 
-    case '0666':
+    case 'F':
 
             switch(true)
             {
-             case cantidad >=50: 
-             precioInicial = cantidad*precio;
-             precioDesc = precioInicial*descuento;
-             precioFinal = precioInicial - precioDesc; 
-             alert(precioFinal);
-             return precioFinal; 
+             case oldPlayer>16: 
+                
              break;
-
+            }
+            switch(true){
+             case estaturaPlayer>=1.70:
+                
+             break;
+            }    
+            switch(true){   
+             case heavyPlayer<=60:  
+              
+             document.querySelector('#Inicial').innerHTML= namePlayer + " eres apto(a) para ingresar a los Wolves ";    
+             break;
+            
+            
              default:
-              precioInicial = cantidad*precio;  
-              precioDesc = precioInicial* 0.0;
-              precioFinal = precioInicial - precioDesc; 
-              alert(precioInicial);  
-              return precioInicial;
+                document.querySelector('#Inicial').innerHTML= " Lo sentimos no eres apto(a) para ingresar a los Wolves ";    
+              
             }
 
-    break;        
+    break; 
+              
 
-    case '1939':
+    case 'M':
 
-      switch(true)
-      {
-       case cantidad >= 50:
-              precioInicial = cantidad*precio;
-              precioDesc = precioInicial*0.05;
-              precioFinal = precioInicial - precioDesc; 
-              alert(precioFinal);
-              return precioFinal; 
-              break;
+        switch(true)
+        {
+         case oldPlayer>=18: 
+            
+         break;
+        }
+        switch(true){
+         case estaturaPlayer>1.70:
+            
+         break;
+        }    
+        switch(true){   
+         case heavyPlayer<=75:  
+          
+         document.querySelector('#Inicial').innerHTML= namePlayer + " eres apto(a) para ingresar a los Wolves ";    
+         break;
+        
+        
+         default:
+            document.querySelector('#Inicial').innerHTML= " Lo sentimos no eres apto(a) para ingresar a los Wolves ";    
+          
+        }
+    }
 
-              default:
-                precioInicial = cantidad*precio;  
-                precioDesc = precioInicial* 0.0;
-                precioFinal = precioInicial - precioDesc; 
-                alert(precioInicial);  
-                return precioInicial;
-      }                
-
-    default:
-      precioInicial = cantidad*precio;  
-      precioDesc = precioInicial* 0.0;
-      precioFinal = precioInicial - precioDesc; 
-      alert(precioInicial);  
-      return precioInicial;
-         }
-
-  }
-
-
-
+}
 

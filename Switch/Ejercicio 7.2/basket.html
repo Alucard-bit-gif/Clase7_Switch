@@ -4,51 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="promedio7.1.css">
-    <title>Ejercicio7.1</title>
+    <link rel="stylesheet" href="basket.css">
+    <title>Ejercicio7.2</title>
 </head>
 
 <body>
     <section id="Delta">
         <div id="tituloUno">
-            <h1>Cacharrería </h1>
-            <h2>El Chinito</h2>
-            <h3>Todo a $ 5.000 COP</h3>
+            <h1>Escuela de Baloncesto</h1>
+            <h2>WolverGeek</h2>
+            <h3>Fase de reclutamiento</h3>
         </div>
     </section>
 
     <section>
-        <div id="descuento">
+        <div id="datos">
             <div id="tituloDos">
-                <label for="">Ingrese código de compra</label><br>
-                <select name="tipo" id="codigo" size="1" ><br>
-                    <option value="" placeholder="ingrese su codigo"></option>
-                    <option value="0666">0666</option>
-                    <option value="1939">1939</option>
+                <label for="">Ingrese nombre del jugador</label><br>
+                <input type="text" id="nombre" placeholder="nombre aspirante">
+            </div>
+            <div id="tituloDos">
+                <label for="">Genero</label><br>
+                <select name="tipo" id="codigo" size="1"><br>
+                    <option value=""></option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
                 </select>
             </div>
             <div id="tituloDos">
-                <label for="">Ingrese cantidad de compra</label><br>
-                <input type="text" id="Compra" placeholder="numero de articulos">
+                <label for="">Ingrese su edad</label><br>
+                <input type="number" id="edad" placeholder="edad">
             </div>
-            <button id="Boton2" onclick="Calcular()">Calcular Valor</button>
+            <div id="tituloDos">
+                <label for="">Ingrese su estatura</label><br>
+                <input type="number" id="estatura" placeholder="estatura">
+            </div>
+            <div id="tituloDos">
+                <label for="">Ingrese su peso</label><br>
+                <input type="number" id="peso" placeholder="peso">
+            </div>
+            <button id="Boton2" onclick="Calcular()">Verificar</button>
         </div>
     </section>
 
      <section>
         <div id="tituloDos">
             <div id = "resultado">
-                <h2>Valor inicial</h2><br>
+                <h2>Resultado</h2><br>
                 <h4 id = 'Inicial'></h4>
-                <h2>Descuento</h2><br>
-                <h4 id = 'Descuento'></h4>
-                <h2>Total a pagar</h2><br>
-                <h4 id = 'Total'></h4>
             </div>
         </div> 
      </section>   
 
-    <script src="promedio7.1.js">
+    <script src="basket.js">
 
     </script>
 
