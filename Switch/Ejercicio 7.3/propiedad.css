@@ -25,7 +25,7 @@
   #tituloDos
   {
     padding-right: 40px;
-    padding-top: 40px;
+    padding-top: 0px;
   }
   
   h1, h2, h3, h4{
@@ -49,7 +49,7 @@
         rgba(230, 148, 148, 0.041),
         rgba(240, 133, 186, 0.075)
       ),
-   url("https://wallup.net/wp-content/uploads/2018/09/30/66749-computers-html-computer-code-748x468.jpg")  ; 
+   url("https://cdn.hipwallpaper.com/m/98/34/PwOiQh.jpg")  ; 
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -67,12 +67,12 @@
     margin: 0px auto;
     border-color: 2 px solid rgb(0, 0, 0);
     padding-bottom: 50px;
-    font-size: 30px;
+    font-size: 25px;
     width: 45%;
     background-color: #220786af;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 150px; 
+    margin-top: 50px; 
     color: whitesmoke;
     font-weight: bolder;
 
@@ -86,14 +86,14 @@
   margin-bottom: 30px;
 }
 
-#Compra
+#Compra, #Precio
 {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 30px;
   width: 400px;
   height: 40px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -107,10 +107,10 @@
   align-content: center;
   margin: 0px auto;
   border-color: 2 px solid rgb(0, 0, 0);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 10px;
   padding-left:30px;
-  font-size: 30px;
+  font-size: 25px;
   width: 45%;
   background-color: #220786af;
   border-radius: 5px;

@@ -4,34 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="promedio7.1.css">
-    <title>Ejercicio7.1</title>
+    <link rel="stylesheet" href="propiedad.css">
+    <title>Ejercicio7.3</title>
 </head>
 
 <body>
     <section id="Delta">
         <div id="tituloUno">
-            <h1>Cacharrería </h1>
-            <h2>El Chinito</h2>
-            <h3>Todo a $ 5.000 COP</h3>
+            <h1>Propiedad Raíz </h1>
+            <h2>Bit City</h2>
+            <h3>Cuota inicial 20%</h3>
+            <h3>Descuento entre el 8% y el 10% (según forma de pago)</h3>
         </div>
     </section>
 
     <section>
         <div id="descuento">
             <div id="tituloDos">
-                <label for="">Ingrese código de compra</label><br>
-                <select name="tipo" id="codigo" size="1" ><br>
-                    <option value="" placeholder="ingrese su codigo"></option>
-                    <option value="0666">0666</option>
-                    <option value="1939">1939</option>
-                </select>
+                <label for="">Ingrese número de m2</label><br>
+                <input type="number" id="Compra" placeholder="numero de metros">
             </div>
             <div id="tituloDos">
-                <label for="">Ingrese cantidad de compra</label><br>
-                <input type="text" id="Compra" placeholder="numero de articulos">
+                <label for="">Ingrese precio m2</label><br>
+                <input type="number" id="Precio" placeholder="precio metro">
             </div>
-            <button id="Boton2" onclick="Calcular()">Calcular Valor</button>
+            <div id="tituloDos">
+                <label for="">Ingrese forma de pago</label><br>
+                <select name="tipo" id="codigo" size="1" ><br>
+                    <option value="" placeholder="ingrese su codigo"></option>
+                    <option value="0001">Efectivo</option>
+                    <option value="0002">Cheque</option>
+                </select>
+            </div>
+                <button id="Boton2" onclick="Calcular()">Calcular Valor</button>            
         </div>
     </section>
 
@@ -48,7 +53,7 @@
         </div> 
      </section>   
 
-    <script src="promedio7.1.js">
+    <script src="propiedad.js">
 
     </script>
 

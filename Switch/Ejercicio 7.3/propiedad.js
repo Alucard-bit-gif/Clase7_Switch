@@ -4,11 +4,14 @@ document.getElementById('resultado').style.display="none" ;
 
 //Declarar variables
 
-const precio = 5000;
-const descuento = 0.10;
-var codigoPromo;
-var cantidad;
+let precioM2 = 0;
+let areaM2 = 0;
+const cuotaInicial = 0.20;
+const descuentoUno = 0.10;
+const descuentoDos = 0.08;
+let codigoPromo;
 var precioInicial;
+var precioCuota;
 var precioDesc;
 var precioFinal;
 
@@ -19,13 +22,16 @@ function Calcular()
   document.getElementById('resultado').style.display="block" ;
   //Leer variables.
 
-  //Ingresar codigo.
-  codigoPromo = document.getElementById('codigo').value;
+  //Ingresar metros cuadrados
+  areaM2 = document.getElementById('Compra').value;
 
   //Ingresar cantidad de articulos a comprar
+  precioM2 =  Number(document.getElementById('Precio').value);
 
-  cantidad =  Number(document.getElementById('Compra').value);
+  //Ingresar forma de pago.
+  codigoPromo = document.getElementById('codigo').value;
 
+  
   //Invocar funcion.
 
   precioFinal = valorCompra();
@@ -45,54 +51,36 @@ function valorCompra()
 {
   switch (codigoPromo){
 
-    case '0666':
+    case '0001':
 
-            switch(true)
-            {
-             case cantidad >=50: 
-             precioInicial = cantidad*precio;
-             precioDesc = precioInicial*descuento;
-             precioFinal = precioInicial - precioDesc; 
+             precioInicial = areaM2*precioM2;
+             precioCuota = precioInicial*cuotaInicial;
+             precioDesc = precioCuota*descuentoUno;
+             precioFinal = precioCuota - precioDesc; 
              alert(precioFinal);
-             return precioFinal; 
-             break;
+             return precioFinal;
+    
 
-             default:
-              precioInicial = cantidad*precio;  
-              precioDesc = precioInicial* 0.0;
-              precioFinal = precioInicial - precioDesc; 
-              alert(precioInicial);  
-              return precioInicial;
-            }
+                         
 
     break;        
 
-    case '1939':
+    case '0002':
 
-      switch(true)
-      {
-       case cantidad >= 50:
-              precioInicial = cantidad*precio;
-              precioDesc = precioInicial*0.05;
-              precioFinal = precioInicial - precioDesc; 
-              alert(precioFinal);
-              return precioFinal; 
-              break;
-
-              default:
-                precioInicial = cantidad*precio;  
-                precioDesc = precioInicial* 0.0;
-                precioFinal = precioInicial - precioDesc; 
-                alert(precioInicial);  
-                return precioInicial;
-      }                
+        precioInicial = areaM2*precioM2;
+        precioCuota = precioInicial*cuotaInicial;
+        precioDesc = precioCuota*descuentoDos;
+        precioFinal = precioCuota - precioDesc; 
+        alert(precioFinal);
+        return precioFinal;
+       
+    break;  
+                      
 
     default:
-      precioInicial = cantidad*precio;  
-      precioDesc = precioInicial* 0.0;
-      precioFinal = precioInicial - precioDesc; 
-      alert(precioInicial);  
-      return precioInicial;
+      
+      alert('ingresa codigo');  
+      
          }
 
   }
