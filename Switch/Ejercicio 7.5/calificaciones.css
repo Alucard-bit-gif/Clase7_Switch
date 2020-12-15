@@ -1,0 +1,171 @@
+* { margin: 0; 
+    padding: 0; 
+  border: 0;
+  }
+  
+  header
+  {
+    background-color: #000000;
+    color: rgb(240,240,240);
+    height: 70px;
+    text-align: left;  
+  }
+  
+  p{
+  padding: 20px 0px 0px 30px;
+  font-size: 20px;
+  font-family: Arial;
+  }
+
+  h1{
+    padding: 20px 30px 30px 30px;
+    font-family: Arial;
+    }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.329),
+        rgba(131, 131, 173, 0.336)
+      ),
+   url("https://camo.githubusercontent.com/c1b84a6e51cd9d925defd8bcecd096c0a2fe9c1c5e411ca99387b1552375b7aa/68747470733a2f2f692e7974696d672e636f6d2f76692f353464436555776e3143492f6d617872657364656661756c742e6a7067")  ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+  }
+
+#mayorDinero{
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+#busOne, #busTwo{
+    display: block;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#Delta{
+    float:left;
+    border-style: solid;
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: 0px auto;
+    border-color: 2 px solid rgb(0, 0, 0);
+    color:yellow;
+    padding-bottom: 50px;
+    font-size: 20px;
+    width: 21%;
+    margin-left: 50px;
+    background-color: rgba(19, 4, 37, 0.5);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Gama{
+    
+    float:right;
+    border-style:solid;
+    display: block;
+    text-align: center;
+    align-content: center;
+    margin: 0px auto;
+    border-color: 2 px solid rgb(0, 0, 0);
+    padding-bottom: 50px;
+    font-size: 20px;
+    width: 21%;
+    margin-right: 110px;
+    background-color: rgba(111, 0, 255, 0.5);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#datos
+{
+  border-style: solid;
+  display: block;
+  text-align: center;
+  align-content: center;
+  margin: 0px auto;
+  border-color: 2 px solid rgb(0, 0, 0);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:30px;
+  font-size: 30px;
+  width: 45%;
+  background-color: #041724af;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px; 
+  color: yellow;
+  font-weight: bolder;
+  margin-bottom: 50px;
+  
+}
+
+#tituloDos
+{
+    margin-bottom: 35px;
+}
+
+#nombre, #tecnica, #velocidad, #ataque, #defensa
+{
+    margin-top: 25px;
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#Boton2{
+    background-color: #ff0101e1;
+    display: block;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 200px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+    font-weight: bolder;
+  }
+
+  #resultado{
+      display: flex;
+      justify-content: center;
+  }
+
+  .info{
+      padding: 10px;
+      margin: 10px;
+      background-color: #041724af;
+      color: yellow;
+      padding-bottom: 50px;
+      font-size: 22.5px;
+      width: 21%;
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+  }
+
+  h2{
+      
+  }
