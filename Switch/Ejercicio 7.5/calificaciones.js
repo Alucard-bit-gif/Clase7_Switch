@@ -1,14 +1,16 @@
+alert('verificacion');
+
 //Inicio
 
 document.getElementById('resultado').style.display="none" ;
 
 //Declarar variables
 
-let namePlayer;
-let generoPlayer;
-let oldPlayer;
-let estaturaPlayer;
-let heavyPlayer;
+let nameStudent;
+let notaTecnica;
+let notaVelocidad;
+let notaAtaque;
+let notaDefensa;
 let resultadoFinal;
 
 function Calcular()
@@ -19,94 +21,57 @@ function Calcular()
 
   //Leer variables.
 
-  //Ingresar codigo.
-  namePlayer = document.getElementById('nombre').value;
+  //Ingresar nombre.
+  nameStudent = document.getElementById('nombre').value;
 
-  //Ingresar cantidad de articulos a comprar
+  //Ingresar nota 1
 
-  generoPlayer = document.getElementById('codigo').value;
+  notaTecnica = Number(document.getElementById('codigo').value);
 
-  //Ingresar edad.
+  //Ingresar nota 2.
   
-  oldPlayer =  Number(document.getElementById('edad').value);
+  notaVelocidad =  Number(document.getElementById('edad').value);
 
-  //Ingresar estatura.
+  //Ingresar nota3.
 
-  estaturaPlayer = Number(document.getElementById('edad').value);
+  notaAtaque = Number(document.getElementById('edad').value);
 
-  //Ingresar peso.
+  //Ingresar nota4.
 
-  heavyPlayer =   Number(document.getElementById('peso').value);
+  notaDefensa =   Number(document.getElementById('peso').value);
 
   //Invocar funcion.
 
-  resultadoFinal = valorApto();
+  resultadoFinal = valorFinal();
   
    
   //Imprimir funcion.
 
          
-    
+  document.getElementById('mutante').value=nameStudent;
+  document.getElementById('nota').value = resultadoFinal;
 
 }
 
-function valorApto()
+function valorFinal()
 {
-  switch (generoPlayer){
-
-    case 'F':
-
             switch(true)
             {
-             case oldPlayer>16: 
-                
+             case notaTecnica<=notaVelocidad: 
+             document.querySelector('#poderes').innerHTML = notaVelocidad;
+             document.querySelector('#veloz').innerHTML = notaVelocidad;
+             document.querySelector('#golpe').innerHTML = notaAtaque;
+             document.querySelector('#escudo').innerHTML = notaDefensa;
+             resultadoFinal = ((notaVelocidad * 2) + (notaAtaque + notaDefensa)/4);
              break;
-            }
-            switch(true){
-             case estaturaPlayer>=1.70:
-                
-             break;
-            }    
-            switch(true){   
-             case heavyPlayer<=60:  
-              
-             document.querySelector('#Inicial').innerHTML= namePlayer + " eres apto(a) para ingresar a los Wolves ";    
-             break;
-            
             
              default:
-                document.querySelector('#Inicial').innerHTML= " Lo sentimos no eres apto(a) para ingresar a los Wolves ";    
+             document.querySelector('#Inicial').innerHTML = notaTecnica;
+             document.querySelector('#Inicial').innerHTML = notaVelocidad;
+             document.querySelector('#Inicial').innerHTML = notaAtaque;
+             document.querySelector('#Inicial').innerHTML = notaDefensa;
+             resultadoFinal = (notaTecnica + notaVelocidad + notaAtaque + notaDefensa)/4;
               
             }
 
-    break; 
-              
-
-    case 'M':
-
-        switch(true)
-        {
-         case oldPlayer>=18: 
-            
-         break;
         }
-        switch(true){
-         case estaturaPlayer>1.70:
-            
-         break;
-        }    
-        switch(true){   
-         case heavyPlayer<=75:  
-          
-         document.querySelector('#Inicial').innerHTML= namePlayer + " eres apto(a) para ingresar a los Wolves ";    
-         break;
-        
-        
-         default:
-            document.querySelector('#Inicial').innerHTML= " Lo sentimos no eres apto(a) para ingresar a los Wolves ";    
-          
-        }
-    }
-
-}
-
