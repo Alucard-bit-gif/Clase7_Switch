@@ -25,24 +25,42 @@
 
             <div id="tituloDos">
                 <label for="">Ingrese número de horas trabajadas</label><br>
-                <input type="number" id="horas" min = '1' max = '' placeholder="horas">
+                <input type="text" id="horas" placeholder="horas">
             </div>
             <div id="tituloDos">
                 <label for="">Valor hora</label><br>
-                <input type="number" id="valor" min = '1000' max = "10000" placeholder="precio/hora">
+                <input type="text" id="valor" placeholder="precio/hora">
             </div>
             <button id="Boton2" onclick="Calcular()">Calcular</button>
         </div>
     </section>
 
-     <section>
-        <div id="tituloDos">
-            <div id = "resultado">
-                <h2>Resultado</h2><br>
-                <h4 id = 'Inicial'></h4>
+    <section>
+        <div id="tituloTres">
+            <div id="resultado">
+                <div class="info"> 
+                    <h3>Nombre</h3>
+                    <h4 id='name'></h4><br>
+                </div>
+                <div class='info'>
+                    <h3>Salario Bruto</h3>
+                    <h4 id='salario'></h4><br>
+                </div>
+                <div class= 'info'>
+                     <h3>Bonificaciones</h3>
+                     <h4 id='bonos'></h4><br>
+                </div>
+                <div class= 'info'>
+                      <h3>Deducciones</h3>
+                      <h4 id='deducciones'></h4><br>
+                </div>
+                <div class="info">
+                      <h3>Salario Neto</h3>
+                      <h4 id='neto'></h4><br>
+                </div>
             </div>
-        </div> 
-     </section>   
+        </div>
+    </section>
 
     <script src="salario.js">
 

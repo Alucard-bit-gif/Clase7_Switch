@@ -1,5 +1,4 @@
 //Inicio
-
 document.getElementById('resultado').style.display="none" ;
 
 //Declarar variables
@@ -29,7 +28,7 @@ function Calcular()
 
   //Ingresar cantidad horas laboradas
 
-  cantidadHoras = document.getElementById('horas').value;
+  cantidadHoras = Number(document.getElementById('horas').value);
 
   //Ingresar valor hora.
   
@@ -44,7 +43,9 @@ function Calcular()
    
   //Imprimir funcion.
 
-         
+  document.querySelector('#name').innerHTML= `${namePlayer}`;    
+  document.querySelector('#salario').innerHTML= " $ " + `${precioInicial}` + " COP ";         
+  document.querySelector('#neto').innerHTML =  " $ " + resultadoFinal + " COP ";     
     
 
 }
@@ -52,46 +53,123 @@ function Calcular()
 function valorPago()
 
 {
-    switch (cantidadHoras){
+    switch (true)
+    
+    {
   
       case cantidadHoras<=48:
 
             switch(true)
-            {  case valorHora <=5000:
+            {  case valorHora <5000: 
                precioInicial = cantidadHoras*valorHora;
-               precioFinal = (precioInicial + bonificacionesA) - deduccionesA; 
-               alert(precioFinal);
-               return precioFinal;
-
-               case valorHora <=5000:
+               resultadoFinal = (precioInicial + bonificacionesA) - deduccionesA; 
+               alert(resultadoFinal);
+               document.querySelector('#bonos').innerHTML= " $ " + bonificacionesA + " COP ";    
+               document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesA + " COP ";
+               return resultadoFinal;
+              
+              case valorHora>5000 && valorHora<8000: 
                precioInicial = cantidadHoras*valorHora;
-               precioFinal = (precioInicial + bonificacionesA) - deduccionesA; 
-               alert(precioFinal);
-               return precioFinal;
-            }
+               resultadoFinal = (precioInicial + bonificacionesA) - deduccionesB; 
+               alert(resultadoFinal);
+               document.querySelector('#bonos').innerHTML= " $ " + bonificacionesA + " COP ";    
+               document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesB + " COP ";
+               return resultadoFinal;
              
-  
-                           
-  
-      break;        
-  
-      case '0002':
-  
-          precioInicial = areaM2*precioM2;
-          precioCuota = precioInicial*cuotaInicial;
-          precioDesc = precioCuota*descuentoDos;
-          precioFinal = precioCuota - precioDesc; 
-          alert(precioFinal);
-          return precioFinal;
-         
-      break;  
-                        
-  
-      default:
+               case valorHora>=8000:
+               precioInicial = cantidadHoras*valorHora;
+               resultadoFinal = (precioInicial + bonificacionesA) - deduccionesC; 
+               document.querySelector('#bonos').innerHTML= " $ " + bonificacionesA + " COP ";    
+               document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesC + " COP ";
+               alert(resultadoFinal);
+               return resultadoFinal;
+               
+               break;
+
+               default:
         
-        alert('ingresa codigo');  
+                      alert('ingresa codigo');  
+                
+              }
+ 
+              break;
+             
+
+      case cantidadHoras>=49 && cantidadHoras<=58:
+
+            switch(true)
+            {  case valorHora <5000: 
+               precioInicial = cantidadHoras*valorHora;
+               resultadoFinal = (precioInicial + bonificacionesB) - deduccionesA; 
+               document.querySelector('#bonos').innerHTML= " $ " + bonificacionesB + " COP ";    
+               document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesA + " COP ";
+               alert(resultadoFinal);
+               return resultadoFinal;
+
+               case valorHora>5000 && valorHora<8000:
+               precioInicial = cantidadHoras*valorHora;
+               resultadoFinal = (precioInicial + bonificacionesB) - deduccionesB;
+               document.querySelector('#bonos').innerHTML= " $ " + bonificacionesB + " COP ";    
+               document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesB + " COP "; 
+               alert(resultadoFinal);
+               return resultadoFinal;
+
+               case valorHora>=8000:
+               precioInicial = cantidadHoras*valorHora;
+               resultadoFinal = (precioInicial + bonificacionesB) - deduccionesC; 
+               document.querySelector('#bonos').innerHTML= " $ " + bonificacionesB + " COP ";    
+               document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesC + " COP ";
+               alert(resultadoFinal);
+               return resultadoFinal;
+
+               
+               break;
+               
+               default:
         
-           }
+                alert('ingresa codigo');  
+                
+                   
+              }
+
+              break;
+
+              case cantidadHoras>58:
+
+                switch(true)
+                {  case valorHora <5000: 
+                   precioInicial = cantidadHoras*valorHora;
+                   resultadoFinal = (precioInicial + bonificacionesC) - deduccionesA;
+                   document.querySelector('#bonos').innerHTML= " $ " + bonificacionesC + " COP ";    
+                   document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesA + " COP "; 
+                   alert(resultadoFinal);
+                   return resultadoFinal;
+    
+                   case valorHora>5000 && valorHora<8000:
+                   precioInicial = cantidadHoras*valorHora;
+                   resultadoFinal = (precioInicial + bonificacionesC) - deduccionesB; 
+                   document.querySelector('#bonos').innerHTML= " $ " + bonificacionesC + " COP ";    
+                   document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesB + " COP ";
+                   alert(resultadoFinal);
+                   return resultadoFinal;
+    
+                   case valorHora>=8000:
+                   precioInicial = cantidadHoras*valorHora;
+                   resultadoFinal = (precioInicial + bonificacionesC) - deduccionesC;
+                   document.querySelector('#bonos').innerHTML= " $ " + bonificacionesC + " COP ";    
+                   document.querySelector('#deducciones').innerHTML =  " $ " + deduccionesC + " COP "; 
+                   alert(resultadoFinal);
+                   return resultadoFinal;
+
+                   break;
+    
+                   default:
+            
+                    alert('ingresa codigo');  
+                    
+                       
+                  }
+              
   
     }
-  
+}
